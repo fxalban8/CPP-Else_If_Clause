@@ -28,5 +28,16 @@ int main(){
 		cout<<"You've not chosen any of the previous options"<<endl;
 	}
 
+	//flushing the buffer   
+        int c;
+        do{
+        c=cin.get();
+        } while (c!='\n'&&c!=EOF);
+
+
+        //expecting for an Enter(\n)
+        cin.get();      //remember to flush the buffer with the previous function before implementing cin.get()
+	
+
 	return 0;
 }
