@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-	string input;
+	int input;
 
 	cout<<"1. A"<<endl;
 	cout<<"2. B"<<endl;
@@ -11,7 +11,22 @@ int main(){
 	cout<<"4. D"<<endl;
 	cout<<"5. E"<<endl;
 
-	cout<<"\n"<<"Press one number"<<endl;
+	cout<<"\n"<<"Press one number "<<flush;
+	cin>>input;
+
+	if(input==1){
+		cout<<"You've chosen A"<<endl;
+	}else if(input==2){
+		cout<<"You've chosen B"<<endl;
+	}else if(input==3){
+		cout<<"You've chosen C"<<endl;
+	}else if(input==4){
+		cout<<"You've chosen D"<<endl;
+	}else if(input==5){
+		cout<<"You've chosen E"<<endl;
+	}else{
+		cout<<"You've not chosen any of the previous options"<<endl;
+	}
 
 	return 0;
 }
